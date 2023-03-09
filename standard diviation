@@ -1,0 +1,74 @@
+# This is a summary of std in Python/R/Excel
+# We can change ddof default to get what we want
+# except the whole human population, we should always use n-1 to eliminate sample bias
+# but with large data set the difference is going to be smaller
+
+
+# given a data example
+score = [99, 95, 72, 100, 99, 64, 94, 92, 97, 100, 82, 98, 50, 99, 97, 91, 94, 86, 98, 97, 95, 100, 71, 96, 96, 100, 54, 98, 88, 79]
+
+my_data = pd.DataFrame({
+    "Data": score
+})
+###########################################
+########        Summary         ###########
+###########################################
+# python pandas default std ddof is n-1
+# 1. DataFrame.describe(), its n-1
+my_data.describe()
+# 2. DataFrame.std(), its n-1
+my_data.std()
+###########################################
+# python numpy default std ddof is n, we should change it to n-1
+# np.std(score)= 13.65, because its n
+np.std(score, ddof = 1)
+###########################################
+# R：sd(score)=13.88495, default  n-1
+###########################################
+# excel: stdev(score)=13.88495, because its n-1; stdevp(score)=13.65, its n.
+
+
+#############################################################################
+############  Interesting math methods calculation ##########################
+#############################################################################
+
+# 1. mean and check
+mean = np.mean(score)
+if mean == np.sum(score)/len(score):
+    print("sample mean is: ", mean)
+
+# 2. median and check
+median = np.median(score)
+l = sorted(score)
+if len(score)%2 != 0:
+    f_median = score[(len(score) + 1)/2]
+else:
+    f_median = (sorted(score)[14] + sorted(score)[15])/2
+
+if  median == f_median:
+    print("sample median is: ", median)
+
+# 3. population and sample standard deviation, and check
+
+# population:
+# N:
+std = np.std(score)
+f_std = 0
+for i in range(len(score)):
+    f_std += np.square(score[i] - mean)
+    if i == len(score) - 1:
+        f_std = np.sqrt(f_std/len(score))
+
+if std == f_std:
+    print("population standard deviation is: ", std)
+
+# sample
+# N-1:    
+f_std_new = 0
+for i in range(len(score)):
+    f_std_new += np.square(score[i] - mean)
+    if i == len(score) - 1:
+        f_std_new = np.sqrt(f_std_new/(len(score) - 1))
+
+print("sample standard deviation is: ", f_std_new)
+
