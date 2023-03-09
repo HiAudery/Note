@@ -5,7 +5,7 @@
 
 
 # given a data example
-score = [99, 95, 72, 100, 99, 64, 94, 92, 97, 100, 82, 98, 50, 99, 97, 91, 94, 86, 98, 97, 95, 100, 71, 96, 96, 100, 54, 98, 88, 79]
+score = []
 
 my_data = pd.DataFrame({
     "Data": score
@@ -77,8 +77,5 @@ print("sample standard deviation is: ", f_std_new)
 # reference: https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/variance-standard-deviation-sample/a/population-and-sample-standard-deviation-review
 
 
-# Inspired and Thanks to my Prof. Matt and Prof. Lu
-
-# Interesting & Happy
-
+# Inspired by and Thanks to Prof. Matt and Prof. Lu
 
