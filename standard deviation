@@ -72,3 +72,13 @@ for i in range(len(score)):
 
 print("sample standard deviation is: ", f_std_new)
 
+# reference: https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.std.html?highlight=std#pandas.DataFrame.std
+# reference: https://numpy.org/doc/stable/reference/generated/numpy.std.html
+# reference: https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/variance-standard-deviation-sample/a/population-and-sample-standard-deviation-review
+
+
+# Inspired and Thanks to my Prof. Matt and Prof. Lu
+
+# Interesting & Happy
+
+
