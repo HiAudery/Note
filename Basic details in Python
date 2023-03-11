@@ -1,0 +1,14 @@
+# To familarize the most basic stuff and elinimnate any uncertainty
+
+🎉1. Operators
++, -, *, /, **(not ^), power()
+
+
+🎉2. Variable names
+These are the two syntax rules we need to follow when we're naming variables:
+
+  😄We must use only letters, numbers, or underscores (we can't use apostrophes, hyphens, spaces, etc.).
+  😄Variable names can't begin with a number.
+  😄Note that variable names are case sensitive
+
+
