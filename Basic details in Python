@@ -2,7 +2,7 @@
 
 🎉1. Operators
 +, -, *, /, **(not ^), power()
-
++=, -=, *=, /=, **=
 
 🎉2. Variable names
 These are the two syntax rules we need to follow when we're naming variables:
