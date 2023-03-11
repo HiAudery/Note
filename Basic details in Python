@@ -12,3 +12,18 @@ These are the two syntax rules we need to follow when we're naming variables:
   😄Note that variable names are case sensitive
 
 
+🎉3. Data types
+integers, floats, and strings.
+int, float, str
+Depending on the type, the computer will know how to store a value in memory, or what operations we can and can't perform on a value.
+int and float values have different types, but we can mix the values together in arithmetical operations. 
+
+print(float(0)) 0.0
+print(int(1.99)) 1
+print(round(1.99)) 2
+print(round(0.0)) 0
+
+Note that running the round() function doesn't change the value stored by a variable 
+personal_apps = round(personal_apps)
+gift_apps = int(gift_apps)
+
