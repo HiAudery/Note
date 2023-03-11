@@ -1,3 +1,3 @@
-# Notes
+# Note
 
 To take down sparks, memories, impressions...
