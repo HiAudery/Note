@@ -27,3 +27,24 @@ Note that running the round() function doesn't change the value stored by a vari
 personal_apps = round(personal_apps)
 gift_apps = int(gift_apps)
 
+
+# Notice the backslash character in 'Facebook\'s'
+motto = 'Facebook\'s old motto was "move fast and break things".'
+print(motto)
+Facebook's old motto was "move fast and break things".
+# The \ character has a special function within a string: it escapes (cancels) the special function of characters. 
+# Above, we used \ to escape the second single quotation mark, which had the special function of ending the string.
+
+
+
+print('a' * 1)
+print('a' * 4)
+print('a ' * 5)
+print('a' * 0) # No output for this line
+print('a' * -1) # No output for this line
+
+
+
+
+
+
