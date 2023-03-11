@@ -4,4 +4,7 @@ RuntimeError
 
 SyntaxError
 
+TypeError: can only concatenate str (not "int") to str
+
+ValueError: invalid literal for int() with base 10: 'wrong format'
 
