@@ -1,4 +1,12 @@
-# To familarize the most basic stuff and elinimnate any uncertainty
+##################################################################################
+## 💐Summary💐 To familarize the most basic stuff and elinimnate any uncertainty ##
+##################################################################################
+
+
+##################################################################################
+## 🐶Mood🐶 I love exploration, and everything beautiful. They are so pure.     ##
+##################################################################################
+
 
 🎉1. Operators
 +, -, *, /, **(not ^), power()
@@ -44,6 +52,25 @@ print('a' * 0) # No output for this line
 print('a' * -1) # No output for this line
 
 
+a = 2
+b = 5
+print(a+b) 7
+print(str(a)+str(b)) 25
+print(type(str(a)+str(b))) str
+print(type(int(str(a)+str(b)))) int
+
+
+
+Using triple quotation marks also allows us to use both single and double quotation marks without needing to escape them.
+motto = '''Facebook's old motto was 'move fast and break things'.
+Facebook's new motto is 'move fast with stable infra'.'''
+print(motto)
+
+
+▶️index
+datatype: int
+it's a good friend, really helps.
+people who created coding language are interesting architects.
 
 
 
